@@ -1,4 +1,5 @@
-import styled from 'styled-components'
+import { Dashboard } from './components/Dashboard';
+import { Header } from './components/Header';
 import { GlobalStyle } from './styles/globals';
 
 //criação de um componente chamado Title
@@ -9,10 +10,10 @@ import { GlobalStyle } from './styles/globals';
 
 export function App() {
   return (
-    <div className="App">
-        <h1 className='title'>Hellow brah</h1>
-
+    <> 
+        <Header/>
+        <Dashboard/>
         <GlobalStyle/>
-    </div>
+    </>
   );
 }
